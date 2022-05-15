@@ -1,0 +1,12 @@
+.restart{
+    width: 250px;
+    margin: 3% auto;
+	display: grid;
+    font-size: 40px;
+	font-weight: 800;
+}
+
+img{
+    width: 40px;
+    margin-left: 10px;
+}

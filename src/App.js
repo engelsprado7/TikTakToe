@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Mode from "./Components/Mode/Mode";
+import TikTakToe from "./Components/Start/TikTakToe";
 
 function App() {
+  const [mode, setMode] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1>TIK TAK TOE!</h1>
+       <section className="main-section">
+       <Mode onClick={setMode} ></Mode>
+       <TikTakToe mode={mode}></TikTakToe>
+       </section>
     </div>
   );
 }
